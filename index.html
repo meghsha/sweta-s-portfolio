@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d1e9ae7562.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#">Portf<span>olio.</span></a></div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div>
+                    <p>Research Scholar</p>
+                    <h1>Hi, I'm <span>Sweta</span><br> Sharma from India.</h1>
+                </div>
+                <img class="swetaImg" src="images/swetaImg1.jpg.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/MidSection.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="font-size: 22px; margin-bottom: 0px; padding-bottom: 0px;">Scientific researcher in field of Materials Science & Photoelectro-chemistry along with a demonstrated history of working in national research laboratories R&D units. I am keenly interested in sustainable technologies development and aspire to become a highly skilled R&D professional that brings significant material and process improvements, which can impact the quality of life of all. <br/><br/> My research expertise is in the domain of Material Synthesis, techniques and associated affordable and system development for green hydrogen generation by leveraging Photoelectro-chemical technique along with waste water treatment.</p>
+
+                    <div class="tab-titles" style="margin-top: 50px;" >
+                        <p class="tab-links active-link" style="font-size: 25px;" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" style="font-size: 25px;" onclick="opentab('experience')">Publications</p>
+                        <p class="tab-links" style="font-size: 25px;" onclick="opentab('educations')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul style="font-size: 20px;">
+                            <li style="font-size: 20px;"><span >Characterizations</span><br>For probing material's chemical, microstructure and physical properties</li>
+                            <li style="font-size: 20px;"><span>Analysis Tools</span><br> For solving qualitative and quantitative problems.</li>
+                            <li style="font-size: 20px;"><span>Synthesis & Application</span><br>For fabrication or artifical production of materials</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li style="font-size: 20px;" ><span>2D Materials</span><br>Illustrated a simple and low-cost method for the fabrication of photocathode </li>
+                            <li style="font-size: 20px;"><span>Green Energy Harvesting</span><br>This chapter discusses the fundamentals of EC and PEC, as a process of green hydrogen generation</li>
+                            <li style="font-size: 20px;"><span>Hydrogen Generation</span><br>Using 2D nanomaterials generated hydrogen and in the process treated pollutants too</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li style="font-size: 20px;"><span>Rajasthan University</span><br>Bachelor of Science, PCM</li>
+                            <li style="font-size: 20px;"><span>Rajasthan University</span><br>Master of Science, (Physical Science)</li>
+                            <li style="font-size: 20px;"><span>CSIO-CSIR/IIT Mandi</span><br>PhD in Material Science/Photoelectrochemistry</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service sectior -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Speciality</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-atom"></i>
+                    <h2>Characterizations</h2>
+                    <p style="font-size: larger;">Indepth Knowledge of characterization tools such as FT-IR, Raman spectroscopy, XRD, XPS, SEM, TEM, PL, AFM, UV-Vis spectroscopy, GC-MS, and HPLC for making sure the desired output has been achieved.</p>
+                    <a href="https://www.linkedin.com/in/sweta-sharma-337688284/" target="_blank" style="font-size: larger;" >Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-toolbox"></i>
+                    <h2>Analysis Tools</h2>
+                    <p style="font-size: larger;">Exposure on various softwares such as Origin, Avantge, imagej, Canva, Xpert high score, etc. Leveraging these tools for varied purposes like graph plotting, analysing XPS data, determining particle size, creating templates and examining XRD</p>
+                    <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AMpAcmSrmtCut_22NEDE7V_3eoYm8QfspVRVwtjn8tSXmQnOcJTIVrJAksce--T4rAEbUU0fbJfmPuK2RwB5FA&user=lHwqns0AAAAJ" style="font-size: larger;">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-flask-vial"></i>
+                    <h2>Synthesis & Application</h2>
+                    <p style="font-size: larger;">Expertise on various synthesis and characterization of 2D Materials like MoSe2, MoS2, WS2, and MXene and their heterostructures.Used these heterostructures in application (Photoelectro-chemical Waste Water Treatment and Green Hydrogen Generation).</p>
+                    <a href="#" target="_blank" style="font-size: larger;" >Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  projects -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Publications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-2 (1).jpg">
+                    <div class="layer">
+                        <h2>2D Materials</h2>
+                        <p>MoSe2 nanosheets/SiNWs heterojunction-based photocathode for efficient photoelectrochemical water splitting applications.
+                        </p>
+                        <a href="https://iopscience.iop.org/article/10.1088/1361-6528/ace058" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work_2 (1).jpg">
+                    <div class="layer">
+                        <h2>Green Energy Harvesting</h2>
+                        <p>Fundamental Understanding and Figure of Merits for Electrocatalytic and Photo electrocatalytic H2 production and Materials for Hydrogen Generation and Carbon Dioxide Reduction
+                        </p>
+                        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119776086.ch3" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work 3 (1).jpg">
+                    <div class="layer">
+                        <h2>Hydrogen Generation</h2>
+                        <p>
+                            2D Nanomaterial Photoelectrodes for Photoelectrochemical Degradation of Pollutants and Hydrogen Generation. In Two-Dimensional Materials for Environmental Applications.
+                        </p>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-28756-5_10" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AMpAcmSrmtCut_22NEDE7V_3eoYm8QfspVRVwtjn8tSXmQnOcJTIVrJAksce--T4rAEbUU0fbJfmPuK2RwB5FA&user=lHwqns0AAAAJ" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact / footer -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fas fa-paper-plane"></i> officialswetas@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 7340919152</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/bhardwaj__rksweta/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sweta-sharma-337688284/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <div class="downloadbtn">
+                        <a href="images/Sweta's Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>           
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Thank you for visiting by...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
